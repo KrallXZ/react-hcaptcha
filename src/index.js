@@ -1,7 +1,7 @@
 const React = require('react');
 
 // Create random ID
-const randomID = () => `${(Number(String(Math.random()).slice(2)) + Date.now() + Math.round(performance.now())).toString(36)}`;
+const randomID = () => `${(Number(String(Math.random()).slice(2)) + Date.now() + Math.round(Date.now())).toString(36)}`;
 
  // Create script to init hCaptcha
 const CaptchaScript = (cb, hl) => {
